@@ -42,6 +42,7 @@
 		CC7D42422E0E9EA400B6C562 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CC7D42412E0E9EA400B6C562 /* Info.plist */; };
 		CC7D42442E0E9EC700B6C562 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC7D42432E0E9EC700B6C562 /* SceneDelegate.swift */; };
 		CC7D42472E0EB20400B6C562 /* CachingProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC7D42462E0EB20400B6C562 /* CachingProtocol.swift */; };
+		CC7D424A2E0EC9EB00B6C562 /* DIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC7D42492E0EC9EB00B6C562 /* DIContainer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -81,6 +82,7 @@
 		CC7D42412E0E9EA400B6C562 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CC7D42432E0E9EC700B6C562 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		CC7D42462E0EB20400B6C562 /* CachingProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CachingProtocol.swift; sourceTree = "<group>"; };
+		CC7D42492E0EC9EB00B6C562 /* DIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIContainer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -235,6 +237,7 @@
 		CC7D42272E0E868A00B6C562 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				CC7D42482E0EC9D700B6C562 /* DI */,
 				CC7D42452E0EB1A200B6C562 /* Caching */,
 				CC7D42392E0E8DD400B6C562 /* ImageService */,
 				CC7D42292E0E86CF00B6C562 /* Network */,
@@ -294,6 +297,14 @@
 				CC7D42462E0EB20400B6C562 /* CachingProtocol.swift */,
 			);
 			path = Caching;
+			sourceTree = "<group>";
+		};
+		CC7D42482E0EC9D700B6C562 /* DI */ = {
+			isa = PBXGroup;
+			children = (
+				CC7D42492E0EC9EB00B6C562 /* DIContainer.swift */,
+			);
+			path = DI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -371,6 +382,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				21B8416D2D47C0E20085DAA2 /* ReviewsViewModelState.swift in Sources */,
+				CC7D424A2E0EC9EB00B6C562 /* DIContainer.swift in Sources */,
 				CC7D42302E0E87C600B6C562 /* NetworkServiceProtocol.swift in Sources */,
 				CC7D42442E0E9EC700B6C562 /* SceneDelegate.swift in Sources */,
 				CC7D42262E0E857300B6C562 /* UserModel.swift in Sources */,
