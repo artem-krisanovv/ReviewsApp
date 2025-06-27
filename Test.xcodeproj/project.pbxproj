@@ -42,6 +42,10 @@
 		CC7D42442E0E9EC700B6C562 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC7D42432E0E9EC700B6C562 /* SceneDelegate.swift */; };
 		CC7D42472E0EB20400B6C562 /* CachingProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC7D42462E0EB20400B6C562 /* CachingProtocol.swift */; };
 		CC7D424A2E0EC9EB00B6C562 /* DIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC7D42492E0EC9EB00B6C562 /* DIContainer.swift */; };
+		CC7D424E2E0EE5FA00B6C562 /* ReviewCellConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC7D424D2E0EE5FA00B6C562 /* ReviewCellConfig.swift */; };
+		CC7D42502E0EE60E00B6C562 /* ReviewCellLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC7D424F2E0EE60E00B6C562 /* ReviewCellLayout.swift */; };
+		CC7D42542E0EE64C00B6C562 /* AvatarContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC7D42532E0EE64C00B6C562 /* AvatarContainer.swift */; };
+		CC7D42562E0EE65B00B6C562 /* PhotoReviewContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC7D42552E0EE65B00B6C562 /* PhotoReviewContainer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -82,6 +86,10 @@
 		CC7D42432E0E9EC700B6C562 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		CC7D42462E0EB20400B6C562 /* CachingProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CachingProtocol.swift; sourceTree = "<group>"; };
 		CC7D42492E0EC9EB00B6C562 /* DIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIContainer.swift; sourceTree = "<group>"; };
+		CC7D424D2E0EE5FA00B6C562 /* ReviewCellConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewCellConfig.swift; sourceTree = "<group>"; };
+		CC7D424F2E0EE60E00B6C562 /* ReviewCellLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewCellLayout.swift; sourceTree = "<group>"; };
+		CC7D42532E0EE64C00B6C562 /* AvatarContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarContainer.swift; sourceTree = "<group>"; };
+		CC7D42552E0EE65B00B6C562 /* PhotoReviewContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoReviewContainer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +126,8 @@
 			isa = PBXGroup;
 			children = (
 				21B82E252D47B0640085DAA2 /* ReviewCell.swift */,
+				CC7D424C2E0EE5B800B6C562 /* CellConfigurations */,
+				CC7D424B2E0EE5AD00B6C562 /* СellViews */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -183,13 +193,11 @@
 		21B82E372D47B1090085DAA2 /* Reviews */ = {
 			isa = PBXGroup;
 			children = (
-				21ED1F642D69D0340012D6F6 /* ReviewsScreenFactory.swift */,
-				21B82E292D47B0640085DAA2 /* ReviewsViewController.swift */,
-				2166A0F32D4A5B25009AAA76 /* ReviewsView.swift */,
-				21B8416C2D47C0E20085DAA2 /* ReviewsViewModelState.swift */,
-				21B82E332D47B0AA0085DAA2 /* ReviewsViewModel.swift */,
-				21B82E352D47B0D80085DAA2 /* ReviewsProvider.swift */,
-				21667B7F2D4A25B2009AAA76 /* RatingRenderer.swift */,
+				CC7D42612E0EE7EA00B6C562 /* Factory */,
+				CC7D42602E0EE77000B6C562 /* Provider */,
+				CC7D42592E0EE6DB00B6C562 /* ViewModel */,
+				CC7D42572E0EE6AE00B6C562 /* Controller */,
+				CC7D42582E0EE6C000B6C562 /* View */,
 				216668752D48F39E009AAA76 /* Cells */,
 			);
 			path = Reviews;
@@ -306,6 +314,66 @@
 			path = DI;
 			sourceTree = "<group>";
 		};
+		CC7D424B2E0EE5AD00B6C562 /* СellViews */ = {
+			isa = PBXGroup;
+			children = (
+				CC7D42532E0EE64C00B6C562 /* AvatarContainer.swift */,
+				CC7D42552E0EE65B00B6C562 /* PhotoReviewContainer.swift */,
+			);
+			path = "СellViews";
+			sourceTree = "<group>";
+		};
+		CC7D424C2E0EE5B800B6C562 /* CellConfigurations */ = {
+			isa = PBXGroup;
+			children = (
+				CC7D424D2E0EE5FA00B6C562 /* ReviewCellConfig.swift */,
+				CC7D424F2E0EE60E00B6C562 /* ReviewCellLayout.swift */,
+				21667B7F2D4A25B2009AAA76 /* RatingRenderer.swift */,
+			);
+			path = CellConfigurations;
+			sourceTree = "<group>";
+		};
+		CC7D42572E0EE6AE00B6C562 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				21B82E292D47B0640085DAA2 /* ReviewsViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		CC7D42582E0EE6C000B6C562 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2166A0F32D4A5B25009AAA76 /* ReviewsView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CC7D42592E0EE6DB00B6C562 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				21B82E332D47B0AA0085DAA2 /* ReviewsViewModel.swift */,
+				21B8416C2D47C0E20085DAA2 /* ReviewsViewModelState.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		CC7D42602E0EE77000B6C562 /* Provider */ = {
+			isa = PBXGroup;
+			children = (
+				21B82E352D47B0D80085DAA2 /* ReviewsProvider.swift */,
+			);
+			path = Provider;
+			sourceTree = "<group>";
+		};
+		CC7D42612E0EE7EA00B6C562 /* Factory */ = {
+			isa = PBXGroup;
+			children = (
+				21ED1F642D69D0340012D6F6 /* ReviewsScreenFactory.swift */,
+			);
+			path = Factory;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -386,15 +454,19 @@
 				CC7D42262E0E857300B6C562 /* UserModel.swift in Sources */,
 				21B82E2E2D47B0640085DAA2 /* ReviewCell.swift in Sources */,
 				CC7D422C2E0E874300B6C562 /* ReviewDto.swift in Sources */,
+				CC7D424E2E0EE5FA00B6C562 /* ReviewCellConfig.swift in Sources */,
 				21ED1F622D69CBCD0012D6F6 /* RootView.swift in Sources */,
 				21667B802D4A25B2009AAA76 /* RatingRenderer.swift in Sources */,
 				216668712D48E4B2009AAA76 /* NSAttributedString+Ext.swift in Sources */,
 				CC7D42322E0E882400B6C562 /* HTTPMethod.swift in Sources */,
+				CC7D42562E0EE65B00B6C562 /* PhotoReviewContainer.swift in Sources */,
 				CC7D423E2E0E98A200B6C562 /* NavigationProtocol.swift in Sources */,
 				CC7D42222E0E84B500B6C562 /* ReviewModel.swift in Sources */,
 				21B82E362D47B0D80085DAA2 /* ReviewsProvider.swift in Sources */,
 				CC7D42242E0E852900B6C562 /* ReviewsModel.swift in Sources */,
 				21ED1F602D69C85E0012D6F6 /* RootViewController.swift in Sources */,
+				CC7D42502E0EE60E00B6C562 /* ReviewCellLayout.swift in Sources */,
+				CC7D42542E0EE64C00B6C562 /* AvatarContainer.swift in Sources */,
 				CC7D42472E0EB20400B6C562 /* CachingProtocol.swift in Sources */,
 				CC7D42362E0E88E200B6C562 /* NetworkService.swift in Sources */,
 				21B82E342D47B0AA0085DAA2 /* ReviewsViewModel.swift in Sources */,
