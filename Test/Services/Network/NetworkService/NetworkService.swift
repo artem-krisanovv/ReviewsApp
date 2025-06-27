@@ -11,7 +11,7 @@ struct NetworkService: NetworkServiceProtocol {
         let (data, response) = try await URLSession.shared.data(for: request)
 
         guard let statusCode = (response as? HTTPURLResponse)?.statusCode else {
-            throw NetworkServiceError.invalidResponse("НЕ удалось прочесть ответ с сервера")
+            throw NetworkServiceError.invalidResponse("Не удалось прочесть ответ с сервера")
         }
 
         switch statusCode {

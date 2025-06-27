@@ -13,15 +13,12 @@ protocol ImageServiceProtocol {
 actor ImageService: ImageServiceProtocol {
     // MARK: - Private Properties
     
-    private var networkService: NetworkServiceProtocol?
     private let cache: NSCache<NSURL, UIImage>
     
     // MARK: - Initialization
     
-    init(cacheLimit: Int = 100, cacheSizeLimit: Int = 1024 * 1024 * 100) {
-        self.cache = NSCache<NSURL, UIImage>()
-        self.cache.countLimit = cacheLimit
-        self.cache.totalCostLimit = cacheSizeLimit
+    init(cache: CachingProtocol) {
+        self.cache = cache
     }
     
     // MARK: - ImageServiceProtocol
@@ -29,9 +26,7 @@ actor ImageService: ImageServiceProtocol {
     func loadImage(from url: URL?) async throws -> UIImage {
         guard let url else { return UIImage() }
         
-        _ = url.absoluteString as NSString
-        
-        if let cachedImage = cache.object(forKey: url as NSURL) {
+        if let cachedImage = cache.getObject(forKey: url as NSURL) {
             return cachedImage
         }
         

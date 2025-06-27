@@ -41,6 +41,7 @@
 		CC7D423E2E0E98A200B6C562 /* NavigationProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC7D423D2E0E98A200B6C562 /* NavigationProtocol.swift */; };
 		CC7D42422E0E9EA400B6C562 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CC7D42412E0E9EA400B6C562 /* Info.plist */; };
 		CC7D42442E0E9EC700B6C562 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC7D42432E0E9EC700B6C562 /* SceneDelegate.swift */; };
+		CC7D42472E0EB20400B6C562 /* CachingProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC7D42462E0EB20400B6C562 /* CachingProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -79,6 +80,7 @@
 		CC7D423D2E0E98A200B6C562 /* NavigationProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationProtocol.swift; sourceTree = "<group>"; };
 		CC7D42412E0E9EA400B6C562 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CC7D42432E0E9EC700B6C562 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		CC7D42462E0EB20400B6C562 /* CachingProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CachingProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -233,6 +235,7 @@
 		CC7D42272E0E868A00B6C562 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				CC7D42452E0EB1A200B6C562 /* Caching */,
 				CC7D42392E0E8DD400B6C562 /* ImageService */,
 				CC7D42292E0E86CF00B6C562 /* Network */,
 			);
@@ -283,6 +286,14 @@
 				CC7D423D2E0E98A200B6C562 /* NavigationProtocol.swift */,
 			);
 			path = Navigation;
+			sourceTree = "<group>";
+		};
+		CC7D42452E0EB1A200B6C562 /* Caching */ = {
+			isa = PBXGroup;
+			children = (
+				CC7D42462E0EB20400B6C562 /* CachingProtocol.swift */,
+			);
+			path = Caching;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -374,6 +385,7 @@
 				21B82E362D47B0D80085DAA2 /* ReviewsProvider.swift in Sources */,
 				CC7D42242E0E852900B6C562 /* ReviewsModel.swift in Sources */,
 				21ED1F602D69C85E0012D6F6 /* RootViewController.swift in Sources */,
+				CC7D42472E0EB20400B6C562 /* CachingProtocol.swift in Sources */,
 				CC7D42362E0E88E200B6C562 /* NetworkService.swift in Sources */,
 				21B82E342D47B0AA0085DAA2 /* ReviewsViewModel.swift in Sources */,
 				CC7D42382E0E8ABA00B6C562 /* APIResponceDto.swift in Sources */,
