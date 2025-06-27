@@ -3,7 +3,7 @@ struct UserModel {
     let avatar_url: String
     let first_name: String
     let last_name: String
-
+    
     static let empty = UserModel(
         id: 0,
         avatar_url: "",

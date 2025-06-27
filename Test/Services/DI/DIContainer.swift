@@ -2,7 +2,6 @@ import UIKit
 
 final class DIContainer {
     static let shared = DIContainer()
-    
     private init() {}
     
     // MARK: - Services
@@ -13,7 +12,10 @@ final class DIContainer {
     
     lazy var imageCache: CachingProtocol = {
         let physicalMemory = ProcessInfo.processInfo.physicalMemory
-        let maxCacheSize = min(50 * 1024 * 1024, Int(Double(physicalMemory) * 0.25))
+        let maxCacheSize = min(
+            50 * 1024 * 1024,
+            Int(Double(physicalMemory) * 0.25)
+        )
         return ImageCache(countLimit: 50, totalCostLimit: maxCacheSize)
     }()
     

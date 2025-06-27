@@ -5,7 +5,7 @@ struct ReviewModel {
     let text: String
     let photo_review: PhotoReviewModel?
     let user: UserModel
-
+    
     static let empty = ReviewModel(
         id: 0,
         created: "",
