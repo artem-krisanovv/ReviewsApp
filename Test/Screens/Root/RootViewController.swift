@@ -5,6 +5,7 @@ final class RootViewController: UIViewController {
     private lazy var rootView = RootView(onTapReviews: openReviews)
 
     override func loadView() {
+        super.loadView()
         view = rootView
     }
 

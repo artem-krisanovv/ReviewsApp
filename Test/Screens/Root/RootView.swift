@@ -22,7 +22,7 @@ final class RootView: UIView {
 private extension RootView {
 
     func setupView() {
-        backgroundColor = .systemBackground
+        backgroundColor = .white
         setupReviewsButton()
     }
 
