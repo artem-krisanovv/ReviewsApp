@@ -39,7 +39,6 @@
 		CC7D42382E0E8ABA00B6C562 /* APIResponceDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC7D42372E0E8ABA00B6C562 /* APIResponceDto.swift */; };
 		CC7D423B2E0E8DE100B6C562 /* ImageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC7D423A2E0E8DE100B6C562 /* ImageService.swift */; };
 		CC7D423E2E0E98A200B6C562 /* NavigationProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC7D423D2E0E98A200B6C562 /* NavigationProtocol.swift */; };
-		CC7D42422E0E9EA400B6C562 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CC7D42412E0E9EA400B6C562 /* Info.plist */; };
 		CC7D42442E0E9EC700B6C562 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC7D42432E0E9EC700B6C562 /* SceneDelegate.swift */; };
 		CC7D42472E0EB20400B6C562 /* CachingProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC7D42462E0EB20400B6C562 /* CachingProtocol.swift */; };
 		CC7D424A2E0EC9EB00B6C562 /* DIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC7D42492E0EC9EB00B6C562 /* DIContainer.swift */; };
@@ -370,7 +369,6 @@
 			files = (
 				21B82E3C2D47B2230085DAA2 /* getReviews.response.json in Resources */,
 				21B82E322D47B0640085DAA2 /* Assets.xcassets in Resources */,
-				CC7D42422E0E9EA400B6C562 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -429,6 +427,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 3ZKD67JWT9;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "$(SRCROOT)/Test/Apps/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
@@ -460,6 +459,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 3ZKD67JWT9;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "$(SRCROOT)/Test/Apps/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;

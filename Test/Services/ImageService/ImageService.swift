@@ -13,7 +13,7 @@ protocol ImageServiceProtocol {
 actor ImageService: ImageServiceProtocol {
     // MARK: - Private Properties
     
-    private let cache: NSCache<NSURL, UIImage>
+    private let cache: CachingProtocol
     
     // MARK: - Initialization
     
