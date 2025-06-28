@@ -37,7 +37,6 @@ final class ReviewsViewController: UIViewController {
 // MARK: - Private Methods
 
 private extension ReviewsViewController {
-    
     func makeReviewsView() -> ReviewsView {
         let reviewsView = ReviewsView()
         setupTableView(reviewsView.tableView)

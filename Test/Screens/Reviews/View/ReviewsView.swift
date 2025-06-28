@@ -53,7 +53,6 @@ final class ReviewsView: UIView {
 
 // MARK: - Private Methods
 private extension ReviewsView {
-    
     func setupView() {
         backgroundColor = .white
         setupSubviews()

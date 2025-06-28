@@ -3,7 +3,6 @@ import UIKit
 // MARK: - Cell
 
 final class ReviewCell: UITableViewCell {
-    
     static let reuseIdentifier = "ReviewCell"
     
     // MARK: - Public Properties

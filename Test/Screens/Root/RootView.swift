@@ -1,7 +1,6 @@
 import UIKit
 
 final class RootView: UIView {
-
     private let reviewsButton = UIButton(type: .system)
     private let onTapReviews: () -> Void
 
@@ -19,7 +18,6 @@ final class RootView: UIView {
 // MARK: - Private
 
 private extension RootView {
-
     func setupView() {
         backgroundColor = .white
         setupReviewsButton()

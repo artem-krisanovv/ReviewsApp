@@ -1,7 +1,6 @@
 import Foundation
 
 final class ReviewsProvider {
-    
     private let bundle: Bundle
     
     init(bundle: Bundle = .main) {
@@ -12,7 +11,6 @@ final class ReviewsProvider {
 // MARK: - Internal
 
 extension ReviewsProvider {
-    
     typealias GetReviewsResult = Result<Data, GetReviewsError>
     
     enum GetReviewsError: Error {

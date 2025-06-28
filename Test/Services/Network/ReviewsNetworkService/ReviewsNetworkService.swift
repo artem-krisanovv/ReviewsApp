@@ -5,7 +5,6 @@ protocol ReviewsNetworkServiceProtocol {
 }
 
 final class ReviewsNetworkService: ReviewsNetworkServiceProtocol {
-    
     private let networkService: NetworkServiceProtocol
     
     init(networkService: NetworkServiceProtocol) {

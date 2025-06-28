@@ -1,7 +1,6 @@
 import UIKit
 
 extension String {
-    
     func attributed(
         font: UIFont = .systemFont(ofSize: UIFont.labelFontSize),
         color: UIColor? = nil

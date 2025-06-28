@@ -1,7 +1,6 @@
 import UIKit
 
 extension UIFont {
-
     /// Шрифт, используемый для отображения имени пользователя в отзыве.
     static let username: UIFont = .systemFont(ofSize: 14.0, weight: .semibold)
     /// Шрифт, используемый для отображения текста отзыва.
@@ -12,5 +11,4 @@ extension UIFont {
     static let created: UIFont = .systemFont(ofSize: 14.0)
     /// Шрифт, используемый для отображения общего количества отзывов.
     static let reviewCount: UIFont = .systemFont(ofSize: 15.0)
-
 }

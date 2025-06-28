@@ -1,7 +1,6 @@
 import UIKit
 
 extension NSAttributedString {
-    
     func boundingRect(width: CGFloat, height: CGFloat = .greatestFiniteMagnitude) -> CGRect {
         boundingRect(
             with: CGSize(width: width, height: height),

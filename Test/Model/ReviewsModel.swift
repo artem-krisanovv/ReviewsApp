@@ -1,7 +1,7 @@
 struct ReviewsModel {
     let count: Int
     let items: [ReviewModel]
-
+    
     static let empty = ReviewsModel(count: 0, items: [])
 }
 

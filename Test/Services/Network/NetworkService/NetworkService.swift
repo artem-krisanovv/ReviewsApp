@@ -61,5 +61,4 @@ struct NetworkService: NetworkServiceProtocol {
         }
         return request
     }
-    
 }

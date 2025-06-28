@@ -9,7 +9,6 @@ protocol TableCellConfig {
 // MARK: - Internal
 
 extension TableCellConfig {
-    
     static var reuseId: String {
         String(describing: Self.self)
     }

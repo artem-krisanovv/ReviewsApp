@@ -37,7 +37,6 @@ private extension AvatarContainer {
             $0.translatesAutoresizingMaskIntoConstraints = false
             addSubview($0)
         }
-        
         setupConstraints()
     }
     
