@@ -46,7 +46,7 @@ struct ReviewCellConfig {
 // MARK: - PhotoReview
 
 extension ReviewCellConfig {
-    struct PhotoReview { 
+    struct PhotoReview {
         let id: String
         var image: UIImage?
     }
