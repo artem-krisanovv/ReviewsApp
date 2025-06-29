@@ -12,3 +12,4 @@ extension UIFont {
     /// Шрифт, используемый для отображения общего количества отзывов.
     static let reviewCount: UIFont = .systemFont(ofSize: 15.0)
 }
+
