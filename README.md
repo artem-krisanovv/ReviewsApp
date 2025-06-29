@@ -10,8 +10,8 @@ ReviewsApp - это iOS приложение для отображения от�
 
 ### Клонировать backend сервер: 
    ```bash
-    https://github.com/artem-krisanovv/ReviewServer.git
-    ```
+   https://github.com/artem-krisanovv/ReviewServer.git
+   ```
 
 1. Перейдите в терминале в папку сервера:
    ```bash
